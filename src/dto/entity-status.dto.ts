@@ -1,0 +1,12 @@
+export enum EntityStatus {
+    PENDING = 'PENDING',
+    IN_PROGRESS = 'IN_PROGRESS',
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    ARCHIVE = 'ARCHIVE',
+    GRADED = 'GRADED',
+    EXPIRED = 'EXPIRED',
+    DELETED = 'DELETED',
+    SUBMITTED = 'SUBMITTED',
+    GRADING = 'GRADING',
+}

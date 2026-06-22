@@ -74,7 +74,7 @@ export default function StatsGrid({ analytics, isLoading }: StatsGridProps) {
             title: 'Average Band',
             value: analytics?.averageOverall ?? 0,
             change: overallDelta !== 0 ? `${overallDelta > 0 ? '+' : ''}${overallDelta} last` : 'no change',
-            trend,
+            trend: 'up',
             icon: Award,
             iconColor: 'text-emerald-500 dark:text-emerald-400',
             iconBg: 'bg-emerald-50 dark:bg-emerald-500/15 ring-emerald-200 dark:ring-emerald-500/25',

@@ -371,7 +371,7 @@ export default function AdminRolesPage() {
                             <span className="text-sm text-gray-500 dark:text-gray-400">
                                 Ko'rsatilmoqda{' '}
                                 <strong className="text-gray-900 dark:text-white">
-                                    {((query.page ?? 1) - 1) * (query.limit ?? 20) + 1}–{Math.min((query.page ?? 1) * (query.limit ?? 20), total)}
+                                    {((query.page ?? 1) - 1) * (Number(query.limit) ?? 20) + 1}–{Math.min((query.page ?? 1) * (Number(query.limit) ?? 20), total)}
                                 </strong>{' '}
                                 / <strong className="text-gray-900 dark:text-white">{total}</strong>
                             </span>

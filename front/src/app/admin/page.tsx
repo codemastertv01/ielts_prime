@@ -47,7 +47,7 @@ const AdminDashboard = () => {
         },
         {
             title: 'Average Score',
-            value: hok?.averageOverallBandScore?.toFixed(1) || '0.0',
+            value: '0.0',
             change: 'Band score',
             icon: Award,
             color: 'from-purple-500 to-purple-600',
@@ -203,7 +203,7 @@ const AdminDashboard = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${attempt.status === 'graded' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : attempt.status === 'grading' ? 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200' : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'}`}>{attempt.status}</span>
+                                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${attempt.status === 'GRADED' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : attempt.status === 'GRADING' ? 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200' : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'}`}>{attempt.status}</span>
                                 </div>
                             </div>
                         ))}

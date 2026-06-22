@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { BookOpen, Check, ChevronLeft, ChevronRight, Headphones, History, Info, Loader2, Mic, PenLine, Save, Shield, X } from 'lucide-react';
 import { useAdminExam } from '@/hooks/useAdminExams';
 import type { ReadingPassage, ListeningPart, WritingTask, SpeakingPart, ExamType } from '@/types/exam';
-import { ExamTypeEnum, ExamModuleeEnum, DifficultyLevelEnum } from '@/types/exam';
+import { ExamTypeEnum, DifficultyLevelEnum, ExamModuleEnum } from '@/types/exam';
 import { REQUIRED_SECTIONS } from '@/constants/exam';
 import { fmtDate, fromUTC, toUTC } from '@/utils/exam';
 import ReadingSection from '../../sections/ReadingSection';
@@ -138,7 +138,7 @@ export default function EditExamPage() {
             title: exam.title ?? '',
             description: exam.description ?? '',
             examType: exam.examType ?? ExamTypeEnum.FULL_MOCK_TEST,
-            module: exam.module ?? ExamModuleeEnum.ACADEMIC,
+            module: exam.module ?? ExamModuleEnum.ACADEMIC,
             difficulty: exam.difficulty ?? DifficultyLevelEnum.BAND_6_7,
             totalTimeLimitMinutes: exam.totalTimeLimitMinutes ?? 170,
             passingScore: exam.passingScore ?? 5.5,

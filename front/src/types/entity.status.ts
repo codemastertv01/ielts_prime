@@ -1,0 +1,14 @@
+export type EntityStatus = 'PENDING' | 'IN_PROGRESS' | 'ACTIVE' | 'INACTIVE' | 'ARCHIVE' | 'GRADED' | 'EXPIRED' | 'DELETED' | 'SUBMITTED' | 'GRADING';
+
+export enum EntityStatusEnum {
+    PENDING = 'PENDING',
+    IN_PROGRESS = 'IN_PROGRESS',
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    ARCHIVE = 'ARCHIVE',
+    GRADED = 'GRADED',
+    EXPIRED = 'EXPIRED',
+    DELETED = 'DELETED',
+    SUBMITTED = 'SUBMITTED',
+    GRADING = 'GRADING',
+}
